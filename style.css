@@ -1,0 +1,269 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --cor-base: #290742;
+  --cor-secundaria: #9E6DC2;
+  --cor-body: #FBF6FF ;
+}
+body{
+  background-color: var(--cor-body);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+  color: none;
+}
+
+li{list-style: none;}
+
+button{
+  cursor: pointer;
+  background: none;
+  border: none;
+  font: inherit;
+  outline: none;
+}
+hr{
+  color: #F2E7FA;
+}
+
+.container{
+  margin-inline: 15px ;
+}
+.section{
+  padding-block: 95px;
+}
+.texto-centro{
+  text-align: center;
+}
+.lista-grid{
+  display: grid;
+  gap: 50px;
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  padding: 20px 0;
+  transition: .4s ease;
+}
+.header.scroll{
+  background-color: white;
+
+}
+.header.scroll .logo,
+.header.scroll .btn-abrir-menu{
+color: var(--cor-base);
+}
+.header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  font-size: 32px;
+  font-weight: 500;
+  color: white;
+}
+.btn-abrir-menu,
+.btn-fechar-menu{
+  font-size: 32px;
+  color: white;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left: -200px;
+  
+  background-color: rgb(11, 123, 11);
+  max-width: 250px;
+  width: 100%;
+  height: 100vh;
+  
+  transition: .4s ease;
+  padding: 30px 20px;
+  visibility: hidden;
+  z-index: 5;
+}
+.navbar.show{
+  transform: translateX(200px);
+  visibility: visible;
+}
+.navbar-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.navbar-top .logo{
+margin-inline-end: 20px;
+}
+
+.navbar-lista{
+  gap: 35px;
+}
+
+.navbar-link{
+  padding: 10px;
+  color: white;
+  transition: .4s;
+}
+.navbar-link:is(:hover, :focus-within){color: var(--cor-base);}
+
+
+
+
+.home{
+  width: 100%;
+  height: max-content;
+  background-color: var(--cor-base);
+}
+
+.home .section-titulo{
+  color: var(--cor-secundaria);
+  font-size: 2.5rem;
+}
+.home .section-texto{
+  margin-block: 30px;
+  color: white;
+}
+.home .btn{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-block-end: 50px ;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor-secundaria);
+}
+.home .btn:is(:hover, :focus){
+color:lime;
+}
+
+.img{
+  width: 100%;
+  height: 100%;
+}
+.img img{
+  width: 100%;
+  height: fit-content;
+  object-fit: contain;
+}
+
+.cartao-index{
+  width: 100%;
+}
+.noticias .card{
+  gap: 20px;
+  margin-block: 95px;
+}
+.data-input{
+  margin-block: 16px 18px;
+  font-size: 12px;
+}
+.titulo-noticia{
+  margin-block-end: 16px;
+  color: var(--cor-base);
+}
+.noticia-cartao{
+  padding: 20px;
+  transition: .2s ease;
+}
+.noticia-cartao:is(:hover, :focus){
+  transform: scale(1.1);
+  box-shadow:3px 4px 30px hsla(0, 0%, 53%, 0.1) ;
+  border-radius: 15px;
+}
+.img-cartao{
+  width: 100%;
+}
+.img-cartao img{
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+@media(min-width: 575px){
+  
+  .container{
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+}
+
+@media (min-width:768px ){
+
+  .container{max-width: 640px;}
+  .card{
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (min-width:992px){
+  .container{max-width: 960px;}
+
+  .btn-abrir-menu,
+  .navbar-top{display: none;}
+
+  .header{padding: 20px}
+
+  .navbar,
+  .navbar.header.ativa{all: unset;}
+
+  .navbar-lista{
+    display: flex;
+    gap: 40px;
+  }
+
+  .navbar-link{
+    color: white;
+    font-weight: 500;
+    padding: 0 0 ;
+    transition: 4.s ease;
+  }
+  .header.scroll .navbar-link{
+    color: var(--cor-base);
+  }
+  .header.scroll .navbar-link:hover{
+  color: var(--cor-secundaria);
+  }
+
+
+  .home .container{
+  display: grid;
+  gap: 30px;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  }
+  .home .home-content .section-texto,
+  .home .home-content .section-titulo{
+    text-align: left;
+  }
+
+.coluna{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px){
+  .container{ max-width: 1140px;}
+  .home .container{
+    gap: 100px;
+  }
+  .card{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RockBlog</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">RockBlog</a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">RockBlog</a>
+            <button class="btn-fechar-menu" data-trocar>
+              <i class="bi-x-lg" ></i>
+            </button>
+          </div>
+
+          <ul class="navbar-lista">
+            <li>
+              <a href="#" class="navbar-link"data-navbar-link>Home</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link"data-navbar-link>Sobre</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link"data-navbar-link>Categorias</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link"data-navbar-link>Contato</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="btn-abrir-menu" data-trocar>
+          <i class="bi-list"></i>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="section home">
+        <div class="container">
+          <div class="home-content">
+            <h1 class="section-titulo texto-centro">
+              Veja o guia definitivo para conquistar os seus objectivos com DEV
+              em 2022
+            </h1>
+            <p class="section-texto texto-centro">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              sit saepe, porro harum adipisci quaerat doloremque laborum
+              similique atque voluptates laboriosam reprehenderit eos, fugiat
+              quasi animi beatae cumque expedita aliquid.
+            </p>
+            <a href="#" class="btn">Veja mais <i class="bi-arrow-right"></i></a>
+          </div>
+
+          <figure class="img">
+            <img src="featured-image.png" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section noticias">
+        <div class="container">
+          <div class="coluna">
+            <div class="noticia">
+              <figure class="img-cartao">
+                <img src="post-1.png" alt="" />
+              </figure>
+              <p class="data-input">Janeiro 04, 2022</p>
+              <h3 class="titulo-noticia">
+                Veja a evoluição do Front-end na prática
+              </h3>
+              <p class="texto-noticia">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                eveniet perspiciatis consequatur quasi nulla reiciendis.
+              </p>
+            </div>
+            <ul class="lista-grid normal">
+              <li>
+                <div class="noticia">
+                  <p class="data-input">Janeiro 04, 2022</p>
+                  <h3 class="titulo-noticia">
+                    Conheça as principais técnicas para conseguir uma vaga
+                    internacional em programação
+                  </h3>
+                  <p class="texto-noticia">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odio eveniet perspiciatis consequatur quasi nulla reiciendis
+                    maxime. Officiis hic sed odio soluta qui amet molestiae nisi
+                    sint. Et deserunt ducimus debitis.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="noticia">
+                  <p class="data-input">Janeiro 04, 2022</p>
+                  <h3 class="titulo-noticia">
+                    Veja a evoluição do Front-end na prática
+                  </h3>
+                  <p class="texto-noticia">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odio eveniet perspiciatis consequatur quasi nulla
+                    reiciendis.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="lista-grid card">
+            <li>
+              <div class="noticia-cartao">
+                <figure class="img-cartao">
+                  <img src="post-2.png" />
+                </figure>
+                <p class="data-input">Janeiro 04, 2022</p>
+                <h3 class="titulo-noticia">
+                  10 dicas para conseguir a vaga desejada
+                </h3>
+                <p class="texto-noticia">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  eveniet perspiciatis consequatur quasi nulla reiciendis
+                  maxime. Officiis hic sed odio soluta qui amet molestiae nisi
+                  sint. Et deserunt ducimus debitis.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="noticia-cartao">
+                <figure class="img-cartao">
+                  <img src="post-3.png" />
+                </figure>
+                <p class="data-input">Janeiro 04, 2022</p>
+                <h3 class="titulo-noticia">
+                  Deixa o seu codigo mais semântico com essas dicas
+                </h3>
+                <p class="texto-noticia">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  eveniet perspiciatis consequatur quasi nulla reiciendis
+                  maxime. Officiis hic sed odio soluta qui amet molestiae nisi
+                  sint. Et deserunt ducimus debitis.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="noticia-cartao">
+                <figure class="img-cartao">
+                  <img src="post-4.png" />
+                </figure>
+                <p class="data-input">Janeiro 04, 2022</p>
+                <h3 class="titulo-noticia">
+                  Use essas dicas para a sua aplicação Mobile
+                </h3>
+                <p class="texto-noticia">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  eveniet perspiciatis consequatur quasi nulla reiciendis
+                  maxime. Officiis hic sed odio soluta qui amet molestiae nisi
+                  sint. Et deserunt ducimus debitis.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
