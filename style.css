@@ -128,7 +128,6 @@ margin-inline-end: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 155px;
 }
 
 .home .section-titulo{
@@ -278,6 +277,7 @@ color:lime;
 
   .home .container{
     gap: 100px;
+    padding-top: 155px;
   }
   .card{
     grid-template-columns: 1fr 1fr 1fr;
