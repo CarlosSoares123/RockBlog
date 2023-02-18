@@ -245,11 +245,16 @@ color:lime;
   }
 
 
+  .home{
+    height: 100vh;
+  }
+
   .home .container{
   display: grid;
   gap: 30px;
   align-items: center;
   grid-template-columns: 1fr 1fr;
+
   }
   .home .home-content .section-texto,
   .home .home-content .section-titulo{
@@ -265,6 +270,12 @@ color:lime;
 
 @media (min-width: 1200px){
   .container{ max-width: 1140px;}
+
+  
+  .home{
+    height: 100vh;
+  }
+
   .home .container{
     gap: 100px;
   }
