@@ -1,10 +1,17 @@
 # RockBlog
- Primeiro desafio que fiz da Rockseat
+  Trabalho feito se inspirando nos desafios da Rockseat
+  
+  <a href="https://carlossoares123.github.io/RockBlog/" >Visitar Site</a>
+  
+ <h2>Ferramentas Utilizadas</h2>
+ <ul>
+ <li>HTML5</li>
+ <li>CSS3</li>
+ <li>FIGMA</li>
+ <li>JAVASCRIPT</li>
+ </ul>
 
-# Descrição 😁
-Esta home page foi proposta de desafio da Rockeseat, eu gostei do desadio e concluir e também melhorei ou seja coloquei novas funcionalidades
-
--Site responsivo pra dispositivos variaveis 
--Implementação do menu e suas funções
--ETC...
-
+ <h2>Responsivo</h2>
+  <ul>
+ <li>Layout Responsivo</li>
+ </ul> 
