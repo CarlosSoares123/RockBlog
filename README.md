@@ -1,5 +1,5 @@
 # RockBlog
-  Trabalho feito se inspirando nos desafios da Rockseat
+  Trabalho feito se inspirando nos desafios da Rocketseat
   
   <a href="https://carlossoares123.github.io/RockBlog/" >Visitar Site</a>
   
